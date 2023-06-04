@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/loot-tavern/larsenes-ledger/spells.xml" />
 		</update>
 	</info>
@@ -9,7 +9,7 @@
 	<element name="Aura of Impurity" type="Spell" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_SPELL_AURA_OF_IMPURITY">
 		<supports>Paladin,Tamer,Warlock</supports>
 		<description>
-			<p>Enervating energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centred on you. Each creature of your choice that enters the aura for the first time on its turn or starts its turn there must succeed on a Charisma saving throw or become drained until the end of its next turn. While drained, a creature must roll a d4 and subtract the number rolled from each ability check, attack roll, or saving throw it makes, and any hit points a creature regains are reduced by half.</p>
+			<p>Enervating energy radiates from you in an aura with a <b>30-foot radius</b>. Until the spell ends, the aura moves with you, centred on you. Each creature of your choice that enters the aura for the first time on its turn or starts its turn there must succeed on a <b>Charisma saving throw</b> or become drained until the end of its next turn. While drained, a creature must roll a <b>d4</b> and subtract the number rolled from each ability check, attack roll, or saving throw it makes, and any hit points a creature regains are reduced by half.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -23,6 +23,375 @@
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent" />
 			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Chameleon Skin" type="Spell" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_SPELL_CHAMELEON_SKIN">
+		<supports>Bard,Druid,Ranger,Tamer,Wizard</supports>
+		<description>
+			<p>You imbue a creature you touch with pigment so that its skin, and anything it wears or carries, slowly shifts hues to match its surroundings. For the duration, the target can take the Hide action as a bonus action on each of its turns, even when only lightly obscured.</p>
+			<p>If the target did not move during its last turn, creatures have <b>disadvantage</b> on any Wisdom (Perception) checks made to see the target. Creatures who do not rely on sight, such as those with tremorsense, are <b>immune</b> to this effect.</p>
+			<p><b>At Higher Levels.</b> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school" addition="Biomancy">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">red, yellow, and blue pigment</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Coralskin" type="Spell" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_SPELL_CORALSKIN">
+		<supports>Druid,Ranger,Sorcerer,Wizard</supports>
+		<description>
+			<p>You touch a willing creature, turning their skin into a rapidly growing landscape of varicoloured coral. When the spell is cast, and at the start of each of the target creature’s turns for the duration of the spell, the creature gains temporary hit points equal to <b>2d4</b> plus your spellcasting ability modifier. In addition, the target’s unarmeed attacks deal an additional <b>1d4</b> slashing damage on a hit. When the spell ends, the target loses any remaining temporary hit points from this spell.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school" addition="Biomancy">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a lump of living coral</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Crimson Death" type="Spell" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_SPELL_CRIMSON_DEATH">
+		<supports>Cleric,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You spew a cloud of crimson smoke from your mouth, which gathers in a <b>20-foot-radius sphere</b> centred on your space that lasts for the duration, heavily obscuring the area. Each creature other than you that starts its turn in the cloud or enters it for the first time on its turn must make a <b>Constitution saving throw</b>, taking <b>5d8</b> necrotic damage on a failed save, or half as much damage on a successful one. For as long as the cloud lasts, you can use a bonus action to move it up to <b>20 feet</b> in any direction.</p>
+			<p>A humanoid reduced to 0 hit points by this damage immediately dies and returns as a <b>zombie</b> under your control. You can control a maximum of three zombies at the same time. Any created beyond this number are hostile to all living creatures. In combat, zombies take their turn immediately after yours. Zombies under your control obey your verbal commands (no action required by you). When the spell ends, zombies created by the spell crumble to dust and are destroyed.</p>
+			<p><b>At Higher Levels.</b> When you cast this spell using a spell slot of 7th level or higher, the damage increases by 1d8 for each slot level above 6th.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">6</set>
+			<set name="school">necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (20-foot-radius sphere)</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a crystal rod carved with necromantic runes worth 500 gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Daydream" type="Spell" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_SPELL_DAYDREAM">
+		<supports>Bard,Druid,Warlock</supports>
+		<description>
+			<p>You float some mildly distracting thoughts into the mind of a humanoid you can see within range. The target must succeed on a <b>Wisdom saving throw</b> or have <b>disadvantage</b> on Wisdom (Perception) checks (taking a <b>-5</b> penalty to its passive Perception as a result of this disadvantage) until the spell ends. A creature <b>immune</b> to being charmed is unaffected by this spell.</p>
+			<p>A creature that succeeds on the saving throw by 5 or more is aware that an attempt was made to influence it with magic. Otherwise, the creature remains unaware of the magic that affected it.</p>
+			<p><b>At Higher Levels.</b> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st, or you can extend the range of the spell by <b>30 feet</b> for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">30 foot </set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a tiny, four-panelled window</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Depth Charge" type="Spell" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_SPELL_DEPTH_CHARGE">
+		<supports>Druid,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>With a boom that can be heard <b>300 feet</b> away (or <b>1000 feet</b> in a liquid), a pulse of thunder ripples out from a point you choose within range. Each creature in a <b>20-foot-radius sphere</b> centred on that point must make a <b>Constitution saving throw</b>. A target takes <b>7d6</b> thunder damage on a failed save, or half as much damage on a successful one. This damage increases to <b>9d6</b> if the affected creature is submerged in a liquid.</p>
+			<p><b>At Higher Levels.</b> When you cast this spell using a spell slot of 4th level or higher, the damage increases by <b>1d6</b> for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">90 feet (20-foot-radius sphere)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">some metamorphic rock</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Enrage" type="Spell" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_SPELL_ENRAGE">
+		<supports>Bard,Sorcerer,Warlock</supports>
+		<description>
+			<p>You attempt to create violent emotions in a group of people. Each humanoid in a <b>20-foot-radius sphere</b> centred on a point you choose within range must make a <b>Charisma saving throw</b>; a creature can choose to fail this saving throw if it wishes. A creature that fails this saving throw becomes enraged for the duration.</p>
+			<p>While enraged, a target becomes hostile towards all creatures. An enraged creature that is concentrating on a spell must succeed on a <b>DC 10 Constitution saving throw</b> at the start of each of its turns or lose concentration on the spell.</p>
+			<p>As an action, you can force an enraged creature to use its reaction to make one melee weapon attack against one randomly determined creature within the enraged creature’s reach. If the enraged creature was friendly towards the target of its attack before this spell was cast, the enraged creature can repeat the saving throw immediately after making the attack, ending the effect on itself on a success.</p>
+			<p>An enraged creature can repeat the saving throw whenever it takes damage, ending the effect on itself on a success. When the spell ends, the creature reverts to its previous disposition again, unless the GM rules otherwise.</p>
+			<p><b>At Higher Levels.</b> When you cast this spell using a spell slot of 4th level or higher and use an action to force an enraged creature to make a melee weapon attack, you can force one additional enraged creature to make a melee weapon attack for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">120 feet (20-foot-radius sphere)</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a red handkerchief</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Flare" type="Spell" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_SPELL_FLARE">
+		<supports>Cleric,Sorcerer,Wizard</supports>
+		<description>
+			<p>You launch a pulse of radiant energy at a target within range. Make a <b>ranged spell attack</b> against the target. On a hit, the target takes <b>1d8</b> radiant damage. On a critical hit, the target is covered in glittering mystical light, granting <b>advantage</b> on attack rolls against the target until the end of your next turn.</p>
+			<p>Alternatively, you can launch the pulse at a point in the air within range where it slowly falls towards the ground. Until the end of your next turn, the flare sheds bright light in a <b>20-foot radius</b> and dim light for an additional <b>20 feet.</b></p>
+			<p>This spell’s damage increases by <b>1d8</b> and the radius of the bright and dim light both increase by 10 feet when you reach 5th level (<b>2d8, 30 feet</b>), 11th level (<b>3d8, 40 feet</b>), and 17th level (<b>4d8, 50 feet</b>).</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 feet</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a strip of magnesium</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Humperdink’s Irresistible Revelry" type="Spell" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_SPELL_HUMPERDINKS_IRRESISTIBLE_REVELRY">
+		<supports>Bard,Wizard</supports>
+		<description>
+			<p>You attempt to force creatures in a <b>20-foot square</b> centred on a point within range into a dancing frenzy. Each creature in the area when you cast the spell must succeed on a <b>Wisdom saving throw</b> or suddenly engage in synchronised choreography, perfectly mimicking the movements of each other affected creature with flawless timing.</p>
+			<p>An affected creature must use all of its movement to dance without leaving its space, and has <b>disadvantage</b> on attack rolls and Dexterity saving throws. Other creatures have <b>advantage</b> on attack rolls against a dancing creature. As an action on your turn, you can further control affected creatures, forcing all of them to immediately use their reaction to move up to <b>15 feet</b> in a direction of your choice, potentially triggering opportunity attacks.</p>
+			<p>An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">60 feet (20-foot square)</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small mirror ball</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Living Candle" type="Spell" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_SPELL_LIVING_CANDLE">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You point at a creature you can see within range, causing a swirl of molten wax to surround the creature and gathering hair, clothes, and debris into a wick atop its head. The creature must make a <b>Strength saving throw</b>. On a failure, it takes <b>5d8</b> fire damage as it becomes <b>restrained</b> and encased within the wax until the spell ends, its wick lighting with righteous fire. On a success, the creature takes half as much damage and isn’t restrained.</p>
+			<p>At the end of each of its turns, a restrained creature takes <b>2d8</b> fire damage. The restrained creature, or a creature within <b>5 feet</b> of it, can use its action to make a <b>Strength</b> check against your spell save DC, freeing the restrained creature and ending the spell on a success.</p>
+			<p><b>At Higher Levels.</b> When you cast this spell using a slot level of 4th level or higher, the initial and ongoing damage increases by <b>1d8</b> for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">90 feet</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">some wax</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Lungburst" type="Spell" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_SPELL_LUNGBURST">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You cause rapid and unpredictable changes in the internal air pressure of a creature you can see, rupturing its breathing apparatus. The creature must make a <b>Constitution saving throw</b>. A creature that is holding its breath makes this saving throw with <b>disadvantage</b>. On a failure, a creature takes <b>7d6</b> thunder damage, <b>7d6</b> necrotic damage, and immediately begins suffocating. On a success, a creature takes half as much damage and does not begin suffocating. A creature suffocating in this way can repeat the saving throw at the end of each of its turns, ending its suffocation on a success.</p>
+			<p>A creature that does not need to breathe is <b>immune</b> to the effects of this spell. A <i>greater restoration, heal, or wish</i> spell can restore a creature’s ability to breathe, and end its suffocation.</p>
+			<p><b>At Higher Levels.</b> When you cast this spell using a spell slot of 7th level or higher, the thunder and necrotic damage both increase by <b>1d6</b> for each slot level above 6th.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school" addition="Biomancy">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">90 feet</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Pins and Needles" type="Spell" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_SPELL_PINS_AND_NEEDLES">
+		<supports>Druid,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You momentarily shut down a small part of the nervous system of a creature you can see within range, before overstimulating it and causing crippling pain. The creature must succeed on a <b>Constitution saving throw</b> or take <b>1d8</b> psychic damage. If the target fails its saving throw by <b>5</b> or more, it has <b>disadvantage</b> on the next attack roll it makes before the end of its next turn as it temporarily loses full control of a part of its body.</p>
+			<p>This spell’s damage increases by 1d8 when you reach 5th level (<b>2d8</b>), 11th level (<b>3d8</b>), and 17th level (<b>4d8</b>).</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school" addition="Biomancy">evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 feet</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Protection" type="Spell" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_SPELL_PROTECTION">
+		<supports>Bard,Cleric,Druid,Paladin,Ranger,Tamer</supports>
+		<description>
+			<p>You trace a warding sigil in the air, sending it to slowly circle a willing creature you can see for the next <b>hour</b>. Immediately before the target next takes damage, except psychic damage, the ward triggers. Until the end of the target’s next turn, it has <b>resistance</b> to all damage excluding psychic, including the triggering damage. The warding sigil then disappears, and the spell ends on the target.</p>
+			<p><b>At Higher Levels.</b> When you cast this spell using a spell slot of 3rd level or higher, you may target one additional creature for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">30 feet</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a miniature silver shield worth 10 gp, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Purple Rain" type="Spell" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_SPELL_PURPLE_RAIN">
+		<supports>Bard</supports>
+		<description>
+			<p>An alcoholic rainstorm rapidly builds in a <b>20-foot-radius, 60-foot-tall cylinder</b> centred on a point within range, releasing intoxicating vapours. When the rain begins, each creature in the area must succeed on a <b>Constitution saving throw</b> or gain two levels of drunkenness. For the duration, a creature must also make this saving throw when it enters the spell’s area for the first time on its turn or ends its turn there.</p>
+			<p>A creature with levels of drunkenness inflicted by this spell takes <b>1d10</b> poison damage per level of drunkenness it has at the start of each of its turns. When the spell ends, affected creatures immediately lose all levels of drunkenness.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">5</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 feet (20-foot-radius, 60-foot-tall cylinder)</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">one drop of blue curaçao</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Riptide" type="Spell" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_SPELL_RIPTIDE">
+		<supports>Druid, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>Choose one creature you can see within range that is in at least 2 feet of water and choose a direction. Turbulent currents wrap around the creature. For the duration, the target must make a <b>Strength saving throw</b> at the start of each of its turns. On a failure, it is dragged <b>30 feet</b> in the direction you chose, and its swimming speed is reduced to <b>0 feet</b> until the start of its next turn. On a success, the creature can move normally until the start of its next turn.</p>
+			<p>As a bonus action on your turn, you can change the direction of the underwater currents. The spell ends early if the creature is ever out of the spell’s range, or is no longer in water at least 2 feet deep.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">300 feet</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Stunbolt" type="Spell" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_SPELL_STUNBOLT">
+		<supports>Bard,Druid,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You fire a concentrated bolt of energy at a target within range, which explodes in a cloud of crackling lightning. The target must make a <b>Constitution saving throw.</b></p>
+			<p>On a failure, the target takes <b>8d8</b> lightning damage and can’t take reactions until the start of its next turn. A creature that fails by <b>5</b> or more is also <b>stunned</b> until the end of its next turn. On a success, a creature takes half as much damage, isn’t stunned, and can take reactions as normal.</p>
+			<p><b>At Higher Levels.</b> When you cast this spell at 5th level or higher, the damage increases by <b>1d8</b> per slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">150 feet</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">Something</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Sugar Rush" type="Spell" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_SPELL_SUGAR_RUSH">
+		<supports>Bard,Cleric,Paladin,Sorcerer,Tamer</supports>
+		<description>
+			<p>Choose a willing creature that you can see within range. Until the spell ends, the target’s speed is increased by <b>15 feet,</b> and it gains a <b>+1 bonus to AC</b>. As a bonus action on each of its turns, it can take the Dash, Disengage, Hide, or Use an Object action.</p>
+			<p>When the spell ends, or if an affected creature does not spend movement up to its walking speed by the end of its turn, it then develops a stomach ache and is <b>poisoned</b> until the end of its next turn</p>
+			<p><b>At Higher Levels.</b> When you cast this spell using a spell slot of 3rd-level or higher, you can target one additional creature for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school" addition="Biomancy">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">30 feet</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">some candy</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="The Bends" type="Spell" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_SPELL_THE_BENDS">
+		<supports>Druid,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You assault the internal chemistry of a creature you can see within range, causing bubbles of nitrogen to precipitate in its blood, forcing it to make a <b>Constitution saving throw</b>. On a failed save, the target takes <b>5d8</b> poison damage and is <b>poisoned</b> for <b>1 minute</b>. On a successful save, the target takes half as much damage and isn’t poisoned. If the target is completely submerged in water, increase the damage dice from d8s to <b>d10s.</b></p>
+			<p>The target can repeat the saving throw at the end of each of its turns, ending the effect on a success.</p>
+			<p><b>At Higher Levels.</b> When you cast this spell using a spell slot of 4th level or higher, the damage increases by <b>1d8</b> for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school" addition="Biomancy">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">90 feet</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
