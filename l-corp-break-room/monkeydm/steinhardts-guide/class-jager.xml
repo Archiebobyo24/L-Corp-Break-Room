@@ -4,7 +4,7 @@
 		<name>Jaeger</name>
 		<description>The Jaeger class from the Steinhardt's guide to the Eldritch Hunt.</description>
 		<author>MonkeyDM</author>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="class-jaeger.xml" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/monkeydm/steinhardts-guide/class-jager.xml" />
 		</update>
 	</info>
@@ -113,7 +113,9 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_MDM_SGTTEH_MULTICLASS_JAGER"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_MDM_SGTTEH_MULTICLASS_JAGER"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_MDM_SGTTEH_MULTICLASS_JAGER"/>
-			<select type="Proficiency" name="Skill Proficiency (Jager)" supports="Skill,Jager" number="2" requirements="!ID_MDM_SGTTEH_MULTICLASS_JAGER"/>
+
+			<select type="Proficiency" name="Skill Proficiency (Jager)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" requirements="!ID_MDM_SGTTEH_MULTICLASS_JAGER"/>
+			
 			<grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_FLEXIBLECOMBATANT" level="1"/>
 			<grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_FOCUS" level="1"/>
 			<grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_ELDRITCH_HUNTER" level="1"/>
@@ -209,7 +211,7 @@
 			<p>While you have one or more Momentum dice, you can expend all of your Momentum dice to execute a Finisher. You know Brutal Finisher. You learn one additional Finisher (listed at the end of the class description) of your choice at 4th, 6th, 8th, and 12th level, and may gain others through Jaeger Chapter features.</p>
 		</description>
 		<sheet>
-			<description>You have A d{{momentum:dice}} for a Momentum die</description>
+			<description>You have a d{{momentum:dice}} for a Momentum die</description>
 		</sheet>
 		<rules>
 			<stat name="momentum:dice" value="6" bonus="momentum" level="2" />
