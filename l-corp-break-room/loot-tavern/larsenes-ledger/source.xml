@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="source.xml" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/loot-tavern/larsenes-ledger/source.xml" />
+		</update>
+	</info>
+	<element name="L'Arsene's Ledger of Treasures and Trinkets" type="Source" source="Core" id="ID_LL_SOURCE_LARSENES_Ledger of Treasures and Trinkets">
+		<description>
+			L’Arsene’s Ledger of Treasures and Trinkets of Treasure and Trinkets is more than just a 400-page 5th-edition tome. It is a world-enriching sourcebook filled with arcane instruments and wondrous weapons. It is a guidebook for GMs and players on building balanced magic items. It is bursting with art, subclasses, familiars, spells, crafting recipes, and the dark, jocular whimsy for which the Loot Tavern is infamous. You’re gonna love it!
+		</description>
+		<setters>
+			<set name="abbreviation">LL</set>
+			<set name="url">https://loottavern.com/l-Arsene-s-Ledger of Treasures and Trinkets-preview/</set>
+			<set name="author" abbreviation="LT" url="https://loottavern.com/">Loot Tavern</set>
+			<set name="third-party">true</set>
+		</setters>
+	</element>
+</elements>

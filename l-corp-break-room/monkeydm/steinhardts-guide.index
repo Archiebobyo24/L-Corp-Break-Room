@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Steinhardt's guide to the Eldritch Hunt</name>
+		<update version="0.1.0">
+			<file name="steinhardts-guide.index" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/monkeydm/steinhardts-guide.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/monkeydm/steinhardts-guide/source.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/monkeydm/steinhardts-guide/spells.xml" />
+		<file name="feats.xml" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/monkeydm/steinhardts-guide/feats.xml" />
+		<file name="class-jager.xml" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/monkeydm/steinhardts-guide/class-jager.xml" />
+		<file name="jager-marauder.xml" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/monkeydm/steinhardts-guide/jager-marauder.xml" />
+	</files>
+</index>

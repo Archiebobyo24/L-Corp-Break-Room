@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Marauder</name>
+		<description>The Marauder archetype from the Steinhardt's guide to the Eldritch Hunt.</description>
+		<author>MonkeyDM</author>
+        <update version="0.1.0">
+			<file name="jager-marauder.xml" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/monkeydm/steinhardts-guide/jager-marauder.xml" />
+		</update>
+	</info>
+
+	<!-- Marauder Chapter Archetype -->
+	<element name="Marauder" type="Archetype" source="Steinhardt's guide to the Eldritch Hunt" id="ID_MDM_SGTTEH_ARCHETYPE_JAGER_MARAUDER_CHAPTER">
+		<supports>Jaeger Chapter</supports>
+		<description>
+			<p>A jaeger of this Chapter embodies raw slaughter. Vengeance, wrath, and death, all rolled into one swing that never ceases, endlessly scything through monsters, leaving a bloody wake of destruction. Each marauder is a symbol of the Chapter's determination and ferocity, striking fear into the hearts of their enemies with every swing of their weapon. They are unstoppable warriors, driven by a thirst for vengeance and the need to protect humanity from the monstrous hordes.</p>
+			<div element="ID_MDM_SGTTEH_ARCHETYPE_FEATURE_MARAUDER_CHAPTER_PATH_OF_GORE"/>
+			<div element="ID_MDM_SGTTEH_ARCHETYPE_FEATURE_MARAUDER_CHAPTER_MARAUDER_MOMENTUM"/>
+			<div element="ID_MDM_SGTTEH_ARCHETYPE_FEATURE_MARAUDER_CHAPTER_LEAP_ATTACK"/>
+			<div element="ID_MDM_SGTTEH_ARCHETYPE_FEATURE_MARAUDER_CHAPTER_FELL_THE_LEVIATHAN"/>
+			<div element="ID_MDM_SGTTEH_ARCHETYPE_FEATURE_MARAUDER_CHAPTER_TITANIC_STRENGTH"/>
+		</description>
+		<sheet display="false">
+			<description>A jaeger of this Chapter embodies raw slaughter.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MDM_SGTTEH_ARCHETYPE_FEATURE_MARAUDER_CHAPTER_PATH_OF_GORE" level="3"/>
+			<grant type="Archetype Feature" id="ID_MDM_SGTTEH_ARCHETYPE_FEATURE_MARAUDER_CHAPTER_MARAUDER_MOMENTUM" level="3"/>
+			<grant type="Archetype Feature" id="ID_MDM_SGTTEH_ARCHETYPE_FEATURE_MARAUDER_CHAPTER_LEAP_ATTACK" level="7"/>
+			<grant type="Archetype Feature" id="ID_MDM_SGTTEH_ARCHETYPE_FEATURE_MARAUDER_CHAPTER_FELL_THE_LEVIATHAN" level="14"/>
+			<grant type="Archetype Feature" id="ID_MDM_SGTTEH_ARCHETYPE_FEATURE_MARAUDER_CHAPTER_TITANIC_STRENGTH" level="17"/>
+		</rules>
+	</element>
+	<element name="Path of Gore" type="Archetype Feature" source="Steinhardt's guide to the Eldritch Hunt" id="ID_MDM_SGTTEH_ARCHETYPE_FEATURE_MARAUDER_CHAPTER_PATH_OF_GORE">
+		<description>
+			<p>Starting at 3rd level, you learn the Great Cleave Finisher. This does not count against your Finishers known.</p>
+		</description>
+		<sheet>
+			<description>Starting at 3rd level, you learn the Great Cleave Finisher. This does not count against your Finishers known.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_JAGER_FINISHER_GREAT_CLEAVE" />
+		</rules>
+	</element>
+    <element name="Great Cleave" type="Class Feature" source="Steinhardt's guide to the Eldritch Hunt" id="ID_MDM_SGTTEH_CLASS_FEATURE_JAGER_FINISHER_GREAT_CLEAVE">
+		<description>
+			<p>When you hit a creature with an attack using a weapon with the two-handed property, you can expend all of your Momentum dice. When you do so, the attack deals additional damage equal to 1 Momentum die, and cleaves a number of adjacent targets within reach equal to the number of dice expended. Make a melee weapon attack against each creature targeted. You regain 1 Focus Point for each creature this reduces to 0 hit points, up to your maximum number of Focus Points.</p>
+		</description>
+		<sheet action="Special" usage="Finisher">
+			<description>When you hit a creature, you can expend all Momentum dice and add it  activate Brutal Finisher and the dice to the damage roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Marauder Momentum" type="Archetype Feature" source="Steinhardt's guide to the Eldritch Hunt" id="ID_MDM_SGTTEH_ARCHETYPE_FEATURE_MARAUDER_CHAPTER_MARAUDER_MOMENTUM">
+		<description>
+			<p>Also at 3rd level, while you are wielding a melee weapon with the two-handed property, the size of your Momentum die is increased by one step (from a d6 to a d8, to a d10 at 11th level, and to a d12 at 17th level).</p>
+            <p>Additionally, while you are wearing medium armor, you can add your Constitution modifier in place of your Dexterity modifier (to a maximum of +2) when calculating your AC.</p>
+		</description>
+		<sheet>
+            <description>
+                <p>Momentum die is increased by one step.</p>
+                <p>Additionally, you can add your Constitution modifier in place of your when calculating your AC.</p>
+		    </description>
+        </sheet>
+		<rules>
+            <stat name="momentum:dice" value="8" bonus="momentum" level="2" />
+			<stat name="momentum:dice" value="10" bonus="momentum" level="11" />
+			<stat name="momentum:dice" value="12" bonus="momentum" level="17" />
+
+            <stat name="ac:armored:constitution:cap" value="3" bonus="base" />
+		</rules>
+	</element>
+	<element name="Leap Attack" type="Archetype Feature" source="Steinhardt's guide to the Eldritch Hunt" id="ID_MDM_SGTTEH_ARCHETYPE_FEATURE_MARAUDER_CHAPTER_LEAP_ATTACK">
+		<description>
+			<p>At 7th level, once per turn, if you move more than 15 feet toward a creature (or fall 10 feet or more) immediately before making a weapon attack against them, you deal additional damage on a hit equal to your Momentum Die.</p>
+            <p>When falling, you can make this attack prior to hitting the ground if there is a target creature in range where you would fall. On a hit, any falling damage you take is reduced by half, and you do not fall prone from the fall.</p>
+		</description>
+		<sheet>
+			<description>At 7th level, once per turn, if you move more than 15 feet toward a creature (or fall 10 feet or more) immediately before making a weapon attack against them, you deal additional damage on a hit equal to your Momentum Die.</description>
+		</sheet>
+	</element>
+	<element name="Fell the Leviathan" type="Archetype Feature" source="Steinhardt's guide to the Eldritch Hunt" id="ID_MDM_SGTTEH_ARCHETYPE_FEATURE_MARAUDER_CHAPTER_FELL_THE_LEVIATHAN">
+		<description>
+			<p>Starting at 14th level, whenever you use a Finisher, the target must make a Strength saving throw against 8 + your Strength modifier + your proficiency bonus, or be knocked prone. Creatures that are Large or larger have disadvantage on this saving throw.</p>
+		</description>
+		<sheet>
+			<description>Starting at 14th level, whenever you use a Finisher, the target must make a Strength saving throw or be knocked prone.</description>
+		</sheet>
+	</element>
+	<element name="Titanic Strength" type="Archetype Feature" source="Steinhardt's guide to the Eldritch Hunt" id="ID_MDM_SGTTEH_ARCHETYPE_FEATURE_MARAUDER_CHAPTER_TITANIC_STRENGTH">
+		<description>
+			<p>Starting at 17th level, your strength is so great that you can wield a two-handed weapon in one hand, and can use two-weapon fighting even when the weapons you are wielding aren't light (including using two-handed weapons).</p>
+            <p>If you choose to use two hands to wield a two-handed weapon, when you roll damage with it, you deal bonus damage equal to half your Strength modifier (rounded up).</p>
+            <p>Additionally, when you use a Finisher, you can use your full titanic power to treat it as if it had twice as many Momentum dice, up to a number equal to your maximum Momentum dice + 1. Once you use this, you can’t do so again until you finish a long rest.</p>
+		</description>
+		<sheet>
+            <description>Starting at 17th level, your strength is so great that you can wield a two-handed weapon in one hand.</description>
+        </sheet>
+	</element>
+</elements>

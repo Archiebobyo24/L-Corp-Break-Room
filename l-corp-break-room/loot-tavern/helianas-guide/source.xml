@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="source.xml" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/loot-tavern/helianas-guide/source.xml" />
+		</update>
+	</info>
+	<element name="Heliana’s Guide to Monster Hunting to Monster Hunting" type="Source" source="Core" id="ID_HG_SOURCE_HELIANAS_GUIDE">
+		<description>
+			Heliana’s Guide to Monster Hunting to Monster Hunting is a 600-page tome packed with exciting new content to enhance your 5E game. Discover lethally thrilling adventures; rules for tracking, harvesting, and crafting; and a humongous hoard of fully-illustrated items, monsters, spells, and player options. Battle deadly, multi-stage boss monsters and forge fantastic new items and familiars from their remains.
+		</description>
+		<setters>
+			<set name="abbreviation">HG</set>
+			<set name="url">https://loottavern.com/product/helianas-guide-to-monster-hunting/</set>
+			<set name="author" abbreviation="LT" url="https://loottavern.com/">Loot Tavern</set>
+			<set name="third-party">true</set>
+		</setters>
+	</element>
+</elements>

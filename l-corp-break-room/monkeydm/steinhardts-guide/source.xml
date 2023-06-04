@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="source.xml" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/monkeydm/steinhardts-guide/source.xml" />
+		</update>
+	</info>
+	<element name="Steinhardt's guide to the Eldritch Hunt" type="Source" source="Core" id="ID_SGTTEH_SOURCE_STEINHARDTS_GUIDE_TO_THE_ELDRITCH_HUNT">
+		<description>
+			<p>Steinhardt's Guide to the Eldritch Hunt is a 350+ pages Soulsborne inspired tome packed with exciting new content to enhance your 5E games.</p>
+			<p>Inspired by Lovecraftian Horror and the Soulsborne franchise, you'll discover a victorian setting crawling with nightmarish monsters, eldritch moons, and the ever-looming threat of madness, which fundamentally alter the world and how players interact with it.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">SGTTEH</set>
+			<set name="url">https://www.monkeydm.com/1-steinhardt</set>
+			<set name="author" abbreviation="MDM" url="https://www.monkeydm.com/">MonkeyDM</set>
+			<set name="third-party">true</set>
+		</setters>
+	</element>
+</elements>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>College of Mixology</name>
+		<description>The College of Mixology archetype from the L'Arsene's Ledger of Treasures and Trinkets.</description>
+		<author>Loot Tavern</author>
+        <update version="0.1.0">
+			<file name="bard-mixology.xml" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/loot-tavern/larsenes-ledger/bard-mixology.xml" />
+		</update>
+	</info>
+
+	<!-- College of Mixology Archetype -->
+	<element name="College of Mixology" type="Archetype" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_ARCHETYPE_COLLEGE_OF_MIXOLOGY">
+		<supports>Bard College</supports>
+		<description>
+			<p>A bard of the College of Mixology considers themselves every bit an artist as any painter or musician. After all, does the playful glint of a glass bottle pirouetting through the air in a perfect arc not compare to a graceful arabesque? Does the exquisite blend of carefully curated flavours not bring to mind the mixing of colours on a canvas? And does the feeling of a gentle buzz not relax the soul like the delicately plucked strings of a harp?</p>
+            <p>Adventurous experimenters and eccentric visionaries at heart, mixologists often clash in matters of palate and presentation with bards of the College of Cuisine. These sister colleges maintain a heated rivalry, periodically holding grand competitions that result in meals so sublime, they have been known to make seasoned connoisseurs cry at first taste.</p>
+			<div element="ID_LT_LL_ARCHETYPE_FEATURE_BARD_MIXOLOGY_FLAIR_BARTENDING"/>
+			<div element="ID_LT_LL_ARCHETYPE_FEATURE_BARD_MIXOLOGY_PICK_YOUR_POISON"/>
+			<div element="ID_LT_LL_ARCHETYPE_FEATURE_BARD_MIXOLOGY_BARSIDE_THERAPY"/>
+			<div element="ID_LT_LL_ARCHETYPE_FEATURE_BARD_MIXOLOGY_QUICK_FIX"/>
+			<div element="ID_LT_LL_ARCHETYPE_FEATURE_BARD_MIXOLOGY_GARNISH"/>
+		</description>
+		<sheet display="false">
+			<description>A bard of the College of Mixology considers themselves every bit an artist as any painter or musician.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LT_LL_ARCHETYPE_FEATURE_BARD_MIXOLOGY_FLAIR_BARTENDING" level="3"/>
+			<grant type="Archetype Feature" id="ID_LT_LL_ARCHETYPE_FEATURE_BARD_MIXOLOGY_PICK_YOUR_POISON" level="3"/>
+			<grant type="Archetype Feature" id="ID_LT_LL_ARCHETYPE_FEATURE_BARD_MIXOLOGY_BARSIDE_THERAPY" level="6"/>
+			<grant type="Archetype Feature" id="ID_LT_LL_ARCHETYPE_FEATURE_BARD_MIXOLOGY_QUICK_FIX" level="6"/>
+			<grant type="Archetype Feature" id="ID_LT_LL_ARCHETYPE_FEATURE_BARD_MIXOLOGY_GARNISH" level="14"/>
+		</rules>
+	</element>
+	<element name="Flair Bartending" type="Archetype Feature" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_ARCHETYPE_FEATURE_BARD_MIXOLOGY_FLAIR_BARTENDING">
+		<description>
+			<p>With impeccable showmanship and nary a spilled drop, you’ve learned to dazzle audiences by dexterously manipulating your mixology tools. You gain proficiency with brewer’s supplies and can use them as a spellcasting focus for your bard spells.</p>
+            <p>As an action, you can make a Dexterity (brewer’s supplies) check to put on a mixological show for 1 minute. You must use your action at the start of each of your turns to continue this performance; if you don’t, it ends immediately. Creatures of your choice within 30 feet of you that can see you whose passive Insight score is lower than the result of your check are distracted by your performance, gaining disadvantage on Perception checks for the duration of the show.</p>
+            <p>If you roll a 1 on the d20, you drop some of your tools and the effect fails to occur. The threshold to drop your tools subsequently increases by 1 each time you make a Dexterity (brewer’s supplies) check using this feature, resetting to 1 when you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>As an action, you can make a Dexterity (brewer's supplies) check to distract creatures of you choice within 30ft.</description>
+		</sheet>
+	</element>
+	<element name="Pick Your Poison" type="Archetype Feature" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_ARCHETYPE_FEATURE_BARD_MIXOLOGY_PICK_YOUR_POISON">
+		<description>
+			<p>Expertly combining only the finest ingredients, you’ve learned to make delicious beverages that delight even the dourest dwarf. You can use a set of brewer’s supplies to prepare a special cocktail over the course of 1 minute. When you do, select up to two different ingredients from the table below, which you magically conjure to mix the cocktail. A creature can drink a cocktail as an action, gaining the effects of the chosen ingredients, which last for 10 minutes or until the creature drinks another cocktail. A cocktail that isn’t consumed loses its potency when you finish a long rest.</p>
+            <table class="archetype-features">
+				<thead>
+					<tr><td class="col-5">Ingredient</td><td class="left">Effect</td></tr>
+				</thead>
+				<tr><td>Celestial citrus juice</td><td>The creature regains 1d8 hit points, which aren’t lost after the effect ends.</td></tr>
+				<tr><td>Drow rum</td><td>The creature gains darkvision out to a range of 30 feet. If it already has darkvision, its range is increased by 30 feet.</td></tr>
+				<tr><td>Dwarven whiskey</td><td>The creature gains 2d6 temporary hit points.</td></tr>
+				<tr><td>Elemental gin</td><td>The creature gains advantage on initiative rolls.</td></tr>
+				<tr><td>Sea elf seltzer</td><td>The creature gains a swimming speed equal to its walking speed.</td></tr>
+                <tr><td>Extraplanar vodka</td><td>The creature gains a +1 bonus to the damage rolls of its weapon attacks</td></tr>
+				<tr><td>Feyberry syrup</td><td>The creature’s walking speed is increased by 5 feet.</td></tr>
+				<tr><td>Gnomish coffee liqueur</td><td>The creature’s jump distance is doubled.</td></tr>
+			</table>
+            <p>You can use this feature to create a cocktail a number of times equal to your Charisma modifier (minimum once), and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet>
+            <description>
+                <p>You can make a variety of cocktails that can aid your allies or yourself.</p>
+		    </description>
+        </sheet>
+	</element>
+	<element name="Barside Therapy" type="Archetype Feature" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_ARCHETYPE_FEATURE_BARD_MIXOLOGY_BARSIDE_THERAPY">
+		<description>
+			<p>You are a seasoned expert at dealing with the inebriated and have a few tricks up your sleeve to make the sober become intoxicated. You have advantage on ability checks made to interact socially with poisoned creatures and, when you make a cocktail with your Pick Your Poison feature, you can overload it with magically potent alcohol instead of choosing ingredients. A creature that drinks this cocktail must succeed on a Constitution saving throw against your bard spell save DC or be poisoned for 10 minutes.</p>
+		</description>
+		<sheet>
+			<description>You are skilled at dealing with the inebriated and poisoned. You have advantage on ability checks made to interact socially with them. A creature that drinks your cocktail must succeed on a Constitution saving throw against your bard spell save DC or be poisoned for 10 minutes.</description>
+		</sheet>
+	</element>
+	<element name="Quick Fix" type="Archetype Feature" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_ARCHETYPE_FEATURE_BARD_MIXOLOGY_QUICK_FIX">
+		<description>
+			<p>Pain you as it might, you can rush your creative process to prepare one of your cocktails on the spot. As a bonus action, you can expend one use of your Bardic Inspiration to prepare a cocktail with your Pick Your Poison feature, and either drink it or toss it to a willing creature you can see within 30 feet of you, who can immediately use its reaction to drink it.</p>
+		</description>
+		<sheet>
+			<description>You can rush the process of making a coocktail with a bonus action and a Bardic Inspiration. Then you can either drink or toss it to a willing creature, who can immediately use a reaction to drink it.</description>
+		</sheet>
+	</element>
+	<element name="Garnish" type="Archetype Feature" source="L'Arsene's Ledger of Treasures and Trinkets" id="ID_LT_LL_ARCHETYPE_FEATURE_BARD_MIXOLOGY_GARNISH">
+		<description>
+			<p>Presentation matters, and you’ve learned to take your drinks to the next level with some tasteful embellishments, magical replicas of creature parts that you conjure out of thin air. Whenever you make a cocktail with your Pick Your Poison feature, you can select one of the ingredients from the table below as garnish, which provides an additional effect for the cocktail’s duration.</p>
+            <table class="archetype-features">
+				<thead>
+					<tr><td class="col-5">Ingredient</td><td class="left">Effect</td></tr>
+				</thead>
+				<tr><td>Aberration eye</td><td>The creature gains blindsight to a range of 30 feet.</td></tr>
+				<tr><td>Celestial feather</td><td>The creature gains a flying speed equal to its walking speed.</td></tr>
+				<tr><td>Construct gear</td><td>The effects of the cocktail last for 1d4 hours instead of 10 minutes.</td></tr>
+				<tr><td>Dragon scale</td><td>Choose acid, cold, fire, lightning, or poison when you make the cocktail. The creature gains resistance to that damage type.</td></tr>
+				<tr><td>Fiend horn</td><td>The creature gains advantage on saving throws against spells and other magical effects.</td></tr>
+			</table>
+		</description>
+		<sheet>
+            <description>Whenever you make a cocktail with your Pick Your Poison feature, you can select one of the ingredients from the table below as garnish, which provides an additional effect for the cocktail’s duration.</description>
+        </sheet>
+	</element>
+</elements>

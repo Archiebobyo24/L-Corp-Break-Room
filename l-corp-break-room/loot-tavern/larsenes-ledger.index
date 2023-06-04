@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>L'Arsene Ledger of Treasures and Trinkets</name>
+		<update version="0.1.0">
+			<file name="larsenes-ledger.index" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/loot-tavern/larsenes-ledger.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/loot-tavern/larsenes-ledger/source.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/loot-tavern/larsenes-ledger/spells.xml" />
+		<file name="bard-mixology.xml" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/loot-tavern/larsenes-ledger/bard-mixology.xml" />
+	</files>
+</index>

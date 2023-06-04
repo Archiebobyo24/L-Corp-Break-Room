@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>L Corp Break Room</name>
+		<update version="0.1.0">
+			<file name="l-corp-break-room.index" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room.index" />
+		</update>
+	</info>
+	<files>
+		<file name="loot-tavern.index" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/loot-tavern.index" />
+		<file name="monkeydm.index" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/monkeydm.index" />
+	</files>
+</index>

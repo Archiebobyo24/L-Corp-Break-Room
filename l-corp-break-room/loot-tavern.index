@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Loot Tavern</name>
+		<update version="0.1.0">
+			<file name="loot-tavern.index" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/loot-tavern.index" />
+		</update>
+	</info>
+	<files>
+		<file name="helianas-guide.index.index" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/loot-tavern/helianas-guide.index" />
+		<file name="larsenes-ledger.index" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/loot-tavern/larsenes-ledger.index" />
+	</files>
+</index>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>College of Cuisine</name>
+		<description>The College of Cuisine archetype from the Heliana’s Guide to Monster Hunting to Monster Hunting.</description>
+		<author>Loot Tavern</author>
+        <update version="0.1.0">
+			<file name="bard-cuisine.xml" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/loot-tavern/helianas-guide/bard-cuisine.xml" />
+		</update>
+	</info>
+
+	<!-- College of Cuisine Archetype -->
+	<element name="College of Cuisine" type="Archetype" source="Heliana’s Guide to Monster Hunting to Monster Hunting" id="ID_LT_HG_ARCHETYPE_COLLEGE_OF_CUISINE">
+		<supports>Bard College</supports>
+		<description>
+			<p>Food: it fuels thought, builds bones, and delights the senses. But more than that, breaking bread with a foe can be the beginning of a lasting peace, sculptures of sugar glass can inspire architects to design soaring cities, and the fusion of disparate culinary traditions can tie cultures together. Though we see food every day, it is truly the epitome of inspiration.</p>
+            <p>Bards from the College of Cuisine are as prized in the kitchens of nobles as in the mess halls of the rank and file. While peace treaties might be signed over hoisin-glazed duck with sides of spiced jack-fruit and crispy shallots, it is the well-fed army that will win the war on a hearty oat and raisin porridge. Such bards never struggle to find employment; they travel where their work is appreciated, be their diners highborn or down-to-earth.</p>
+			<div element="ID_LT_HG_ARCHETYPE_FEATURE_BARD_CUISINE_CULINARY_EXPLORATION"/>
+			<div element="ID_LT_HG_ARCHETYPE_FEATURE_BARD_CUISINE_PETIT_FOURS"/>
+			<div element="ID_LT_HG_ARCHETYPE_FEATURE_BARD_CUISINE_CULINARY_SPECIALISATION"/>
+			<div element="ID_LT_HG_ARCHETYPE_FEATURE_BARD_CUISINE_EXECUTIVE_CHEF"/>
+		</description>
+		<sheet display="false">
+			<description>A bard of the College of Cuisine considers themselves every bit an artist as any painter or musician.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LT_HG_ARCHETYPE_FEATURE_BARD_CUISINE_CULINARY_EXPLORATION" level="3"/>
+			<grant type="Archetype Feature" id="ID_LT_HG_ARCHETYPE_FEATURE_BARD_CUISINE_PETIT_FOURS" level="3"/>
+			<grant type="Archetype Feature" id="ID_LT_HG_ARCHETYPE_FEATURE_BARD_CUISINE_CULINARY_SPECIALISATION" level="6"/>
+			<grant type="Archetype Feature" id="ID_LT_HG_ARCHETYPE_FEATURE_BARD_CUISINE_EXECUTIVE_CHEF" level="14"/>
+		</rules>
+	</element>
+	<element name="Culinary Exploration" type="Archetype Feature" source="Heliana’s Guide to Monster Hunting to Monster Hunting" id="ID_LT_HG_ARCHETYPE_FEATURE_BARD_CUISINE_CULINARY_EXPLORATION">
+		<description>
+			<p>Years spent adapting recipes allows you to try unheard-of combinations of ingredients. You gain proficiency with cook’s utensils, which you can use as a spellcasting focus, and your proficiency bonus is doubled for any ability checks you make that uses these utensils to prepare food. In addition, whenever you craft a food (see page 137), you can add one additional ingredient to the recipe, conferring the benefits of that ingredient to the dish on a successful Cooking check.</p>
+		</description>
+		<sheet>
+			<description>Your skills in cooking gives you double proficiency for any ability checks that makes you use utensils to prepare food. You can also add an additional ingredient when crafting food and get that benefit.</description>
+		</sheet>
+	</element>
+	<element name="Petit Fours" type="Archetype Feature" source="Heliana’s Guide to Monster Hunting to Monster Hunting" id="ID_LT_HG_ARCHETYPE_FEATURE_BARD_CUISINE_PETIT_FOURS">
+		<description>
+			<p>During a short or long rest, you can create a number of magical treats equal to your Charisma modifier (minimum one). Choose one of the flavours from the list below with which to imbue these treats, which remain magical until you finish a short or long rest.</p>
+			<p>A creature can use an action or bonus action to eat a treat, gaining a benefit based on the treat’s flavour which, unless otherwise stated, lasts until the end of its next turn.</p>
+			<p>As a bonus action, you can expend one use of your Bardic Inspiration, teleporting any number of treats on your person next to creatures you can see within 60 feet of you, where they remain, hovering near the creature’s mouth. Such a creature can use its reaction to eat the treat, or it can do so on its next turn as normal. Otherwise, the treat falls to the ground.</p>
+			<ul>
+				<li><b>Bitter.</b> The creature gains <b>resistance</b> to poison damage and has <b>advantage</b> on saving throws made to resist the <b>poisoned</b> condition.</li>
+				<li><b>Salty.</b> The creature gains <b>advantage</b> on <b>Wisdom saving throws</b> and is <b>immune</b> to the <b>charmed</b> condition.</li>
+				<li><b>Sour.</b> The creature’s weapon attacks deal bonus acid damage equal to one roll of your Bardic Inspiration die.</li>
+				<li><b>Sweet.</b> The creature gains temporary hit points equal to one roll of your Bardic Inspiration dice plus your Charisma modifier (minimum 1) that last for <b>1 hour</b>.</li>
+				<li><b>Umami.</b> The creature gains a <b>+2 bonus</b> to its AC.</li>
+			</ul>
+		</description>
+		<sheet>
+            <description>
+                <p>You can make a variety of treats that can aid your allies or yourself.</p>
+		    </description>
+        </sheet>
+	</element>
+	<element name="Culinary Specialisation" type="Archetype Feature" source="Heliana’s Guide to Monster Hunting to Monster Hunting" id="ID_LT_HG_ARCHETYPE_FEATURE_BARD_CUISINE_CULINARY_SPECIALISATION">
+		<description>
+			<p>You pursue a particular style of cuisine, choosing from the list below and gaining its feature.</p>
+			<ul>
+				<li><b>Slow Cooking.</b> You gain proficiency with medium armour, heavy armour, shields, and martial weapons. At the start of each of your turns, you gain temporary hit points equal to your proficiency bonus.</li>
+				<li><b>Fast Food.</b> You gain proficiency with medium armour and you can attack twice, instead of once, whenever you take the Attack action on your turn.</li>
+				<li><b>Patissier.</b> You learn two spells of your choice from any spell list. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. These don’t count against the number of bard spells you know.<br/>In addition, when you finish a short rest, you can expend one use of your Bardic Inspiration, rolling the die and recovering a number of levels of spell slots with a combined value equal to or less than the value rolled, and none of the spell slots can be 6th level or higher. Once you use this feature, you can’t do so again until you finish a long rest.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You pursue a particular style of cuisine and gain its feature</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Culinary Specialisation" supports="Culinary Specialisation" number="1" level="6" />
+		</rules>
+	</element>
+
+	<element name="Slow Cooking" type="Archetype Feature" source="Heliana’s Guide to Monster Hunting to Monster Hunting" id="ID_LT_HG_ARCHETYPE_FEATURE_BARD_CUISINE_SLOW_COOKING">
+		<supports>Culinary Specialisation</supports>
+		<description>
+			<p>You gain proficiency with medium armour, heavy armour, shields, and martial weapons. At the start of each of your turns, you gain temporary hit points equal to your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency with medium armour, heavy armour, shields, and martial weapons. At the start of each of your turns, you gain temporary hit points equal to your proficiency bonus.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+		</rules>
+	</element>
+	<element name="Fast Food" type="Archetype Feature" source="Heliana’s Guide to Monster Hunting to Monster Hunting" id="ID_LT_HG_ARCHETYPE_FEATURE_BARD_CUISINE_FAST_FOOD">
+		<supports>Culinary Specialisation</supports>
+		<description>
+			<p> You gain proficiency with medium armour and you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency with medium armour and you can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Patissier" type="Archetype Feature" source="Heliana’s Guide to Monster Hunting to Monster Hunting" id="ID_LT_HG_ARCHETYPE_FEATURE_BARD_CUISINE_PATISSIER">
+		<supports>Culinary Specialisation</supports>
+		<description>
+			<p>You learn two spells of your choice from any spell list. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. These don’t count against the number of bard spells you know.</p>
+			<p>In addition, when you finish a short rest, you can expend one use of your Bardic Inspiration, rolling the die and recovering a number of levels of spell slots with a combined value equal to or less than the value rolled, and none of the spell slots can be 6th level or higher. Once you use this feature, you can’t do so again until you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>When you finish a short rest, you can expend one use of your Bardic Inspiration, rolling the die and recovering a number of levels of spell slots with a combined value equal to or less than the value rolled, and none of the spell slots can be 6th level or higher. Once you use this feature, you can’t do so again until you finish a long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Patissier" supports="(0)||($(spellcasting:slots))" number="2" level="6" spellcasting="Bard"/>
+		</rules>
+	</element>
+
+	<element name="Executive Chef" type="Archetype Feature" source="Heliana’s Guide to Monster Hunting to Monster Hunting" id="ID_LT_HG_ARCHETYPE_FEATURE_BARD_CUISINE_EXECUTIVE_CHEF">
+		<description>
+			<p>Your confidence and authority in the kitchen translates to battlefield command. When a creature that can hear you rolls one of your Bardic Inspiration dice or eats one of your Petit Fours, you can shout authoritative, verbal encouragement (no action required). The creature can immediately use its reaction to either make one weapon attack or move up to its speed without provoking opportunity attacks. A creature that eats a Petit Fours can attack or move as described as part of the same action or reaction used to eat the Petit Fours.</p>
+		</description>
+		<sheet>
+			<description>When a creature that can hear you rolls one of your Bardic Inspiration dice or eats one of your Petit Fours, you can shout authoritative, verbal encouragement (no action required). The creature can immediately use its reaction to either make one weapon attack or move up to its speed without provoking opportunity attacks.</description>
+		</sheet>
+	</element>
+</elements>
