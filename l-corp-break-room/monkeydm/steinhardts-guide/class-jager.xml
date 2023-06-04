@@ -4,7 +4,7 @@
 		<name>Jaeger</name>
 		<description>The Jaeger class from the Steinhardt's guide to the Eldritch Hunt.</description>
 		<author>MonkeyDM</author>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="class-jaeger.xml" url="https://raw.githubusercontent.com/Archiebobyo24/L-Corp-Break-Room/main/l-corp-break-room/monkeydm/steinhardts-guide/class-jager.xml" />
 		</update>
 	</info>
@@ -89,11 +89,15 @@
 			<div element="ID_MDM_SGTTEH_CLASS_FEATURE_JAEGERCHAPTER" />
 			<div element="ID_MDM_SGTTEH_CLASS_FEATURE_PIERCING_GAZE" />
 			<div element="ID_MDM_SGTTEH_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_JAGER" />
-			<!-- <div element="ID_MDM_SGTTEH_CLASS_FEATURE_SEASONEDSURVIVOR" /> -->
+			<div element="ID_MDM_SGTTEH_CLASS_FEATURE_SEASONED_SURVIVOR" />
 			<div element="ID_MDM_SGTTEH_CLASS_FEATURE_EXTRAATTACK" />
-			<!-- <div element="ID_MDM_SGTTEH_CLASS_FEATURE_EVASION" />
-			<div element="ID_MDM_SGTTEH_CLASS_FEATURE_LETHALTEMPO" />
-			<div element="ID_MDM_SGTTEH_CLASS_FEATURE_RELENTLESSPURSUIT" /> -->
+			<div element="ID_MDM_SGTTEH_CLASS_FEATURE_HUNTERS_PURSUIT" />
+			<div element="ID_MDM_SGTTEH_CLASS_FEATURE_EVASION" />
+			<div element="ID_MDM_SGTTEH_CLASS_FEATURE_LETHAL_TEMPO" />
+			<div element="ID_MDM_SGTTEH_CLASS_FEATURE_RELENTLESS_PURSUIT" />
+			<div element="ID_MDM_SGTTEH_CLASS_FEATURE_INURED_TO_MADNESS" />
+			<div element="ID_MDM_SGTTEH_CLASS_FEATURE_ETERNAL_WATCH" />
+			<div element="ID_MDM_SGTTEH_CLASS_FEATURE_ALWAYS_READY" />
 		</description>
 		<sheet display="false">
 			<description>Jaegers are defined by their efficiency in battle, using their mastery over both steel and gunpowder to lay waste to all who oppose them.</description>
@@ -118,15 +122,15 @@
 			<grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_JAEGERCHAPTER" level="3"/>
 			<grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_PIERCING_GAZE" level="3"/>
 			<grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_JAGER" level="4"/>
-			<!-- <grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_SEASONEDSURVIVOR" level="4"/> -->
+			<grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_SEASONED_SURVIVOR" level="4"/>
 			<grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_EXTRAATTACK" level="5"/>
-			<!-- <grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_HUNTERSPURSIT" level="6"/>
+			<grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_HUNTERS_PURSUIT" level="6"/>
 			<grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_EVASION" level="9"/>
-			<grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_LETHALTEMPO" level="11"/>
-			<grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_RELENTLESSPURSUIT" level="13"/>
-			<grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_INUREDTOMADNESS" level="15"/>
-			<grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_ETERNALWATCH" level="18"/>
-			<grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_ALWAYSREADY" level="20"/> -->
+			<grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_LETHAL_TEMPO" level="11"/>
+			<grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_RELENTLESS_PURSUIT" level="13"/>
+			<grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_INURED_TO_MADNESS" level="15"/>
+			<grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_ETERNAL_WATCH" level="18"/>
+			<grant type="Class Feature" id="ID_MDM_SGTTEH_CLASS_FEATURE_ALWAYS_READY" level="20"/>
 
 		</rules>
 	</element>
